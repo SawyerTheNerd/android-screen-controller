@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(del \"\\\\?\\\\C:\\\\Users\\\\sawye\\\\Documents\\\\Code\\\\Websites\\\\android-screen-controller\\\\nul\")",
+      "Bash(cmd.exe /c \"del /f /q \"\"\\\\\\\\?\\\\C:\\\\Users\\\\sawye\\\\Documents\\\\Code\\\\Websites\\\\android-screen-controller\\\\nul\"\"\")",
+      "Bash(powershell.exe -Command \"Remove-Item -LiteralPath ''\\\\?\\\\C:\\\\Users\\\\sawye\\\\Documents\\\\Code\\\\Websites\\\\android-screen-controller\\\\nul'' -Force\")",
+      "Bash(powershell.exe -Command \"Remove-Item -LiteralPath ''\\\\\\\\?\\\\C:\\\\Users\\\\sawye\\\\Documents\\\\Code\\\\Websites\\\\android-screen-controller\\\\nul'' -Force\")",
+      "Bash(python3:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
