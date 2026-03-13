@@ -5,6 +5,11 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  server: {
+    host: "192.168.1.103",
+    port: 5174,
+    allowedHosts: ["asc.enzonic.me"],
+  },
   resolve: {
     alias: {
       "@yume-chan/fetch-scrcpy-server": path.resolve(
