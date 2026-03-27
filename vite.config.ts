@@ -1,10 +1,11 @@
 import { fileURLToPath } from "url";
-import { createRequire } from "module";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
-const require = createRequire(import.meta.url);
+const fetchScrcpyServerPath = fileURLToPath(
+  import.meta.resolve("@yume-chan/fetch-scrcpy-server")
+);
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
@@ -15,9 +16,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@yume-chan/fetch-scrcpy-server": require.resolve(
-        "@yume-chan/fetch-scrcpy-server"
-      ),
+      "@yume-chan/fetch-scrcpy-server": fetchScrcpyServerPath,
     },
   },
   optimizeDeps: {
