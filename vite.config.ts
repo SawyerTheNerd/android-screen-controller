@@ -26,7 +26,6 @@ export default defineConfig({
   },
   optimizeDeps: {
     exclude: [
-      "@yume-chan/fetch-scrcpy-server",
       "@yume-chan/scrcpy-decoder-tinyh264",
     ],
     include: [
